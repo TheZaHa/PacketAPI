@@ -1,0 +1,9 @@
+name: PacketAPI
+version: 1.0
+main: com.gmail.thezaha.Main
+authors: [TheZaHa, TheJvmper]
+description: "Universal PacketAPI for You !"
+prefix: "API"
+commands:
+    test:
+        description: "test command"
