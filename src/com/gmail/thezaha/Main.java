@@ -17,9 +17,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.gmail.thezaha.utils.Reflection;;
 
 public class Main extends JavaPlugin {
-
-	public static void main(String[] args) {
-	}
 	
 	private Main plugin;
 	public Main getPlugin() { return plugin; }
@@ -27,7 +24,7 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		this.plugin = null;
-		super.onDisable();
+                super.onDisable();
 	}
 	
 	
