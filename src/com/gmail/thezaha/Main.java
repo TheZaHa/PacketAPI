@@ -19,12 +19,12 @@ public class Main extends JavaPlugin {
 	@Override
 	public void onDisable() {
 		this.plugin = null;
+		PacketTab.destory();
 		super.onDisable();
 	}
 	@Override
 	public void onEnable() {
 		this.plugin = this;
-		PacketTab.destory();
 		super.onEnable();
 	}
 	
