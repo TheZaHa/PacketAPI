@@ -34,6 +34,15 @@ public class Main extends JavaPlugin {
 		if(!command.getName().equalsIgnoreCase("test")) return false;
 		Player p = (Player) sender;
 		
+		//Nowy system konstruktora Obiektu ^^ - Work In Progress
+		//TabObject to = new TabObject(2/*TabList Size*/, PacketPriority.NORMAL/*TabList Priority*/);
+		/**add to TabList**/
+		//to.setSlot(0, "Slot 1");
+		//to.setSlot(1, "Slot 2");
+		//to.setSlot(2, "Slot 3");
+		//TabObject.setTab(p, to);
+		
+		
 		TabObject o = new TabObject();
 		o.addSlot("§6--->>", "§aWelcome ! ^^", "§6<<---");
 		o.addSlot("", "§c...", "");
