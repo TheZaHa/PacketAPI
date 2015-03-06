@@ -34,9 +34,9 @@ public class Main extends JavaPlugin {
 		if(!command.getName().equalsIgnoreCase("test")) return false;
 		Player p = (Player) sender;
 		
-		//new constructor - Work In Progress, changes not have been introduced yet ...
+		//new constructor and methods - Work In Progress, changes not have been introduced yet ...
 		
-		TabObject to = new TabObject(2/*TabList Size*/, PacketPriority.NORMAL/*TabList Priority*/);
+		TabObject to = new TabObject(PacketPriority.NORMAL/*TabList Priority*/);
 		
 		/**add to TabList**/
 		to.setSlot(0, "Slot 1");
