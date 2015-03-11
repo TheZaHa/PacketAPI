@@ -38,18 +38,10 @@ public class Main extends JavaPlugin {
 		
 		TabObject to = new TabObject(PacketPriority.NORMAL/*TabList Priority*/);
 		
-		/**add to TabList**/
+		/**add to TabList - now, expanded to more methods**/
+		to.addSlot("Slot 3")
 		to.setSlot(0, "Slot 1");
-		to.setSlot(1, "Slot 2");
-		to.setSlot(2, "Slot 3");
 		TabObject.setTab(p, to);
-		
-		//previous constructor - present ...
-		TabObject o = new TabObject();
-		o.addSlot("§6--->>", "§aWelcome ! ^^", "§6<<---");
-		o.addSlot("", "§c...", "");
-		o.addSlot("", "Wsparcie 32 Znakow ^^ ...", "");
-		o.addSlot("", "§aWitaj {player}".replace("{player}", p.getName()), "");
 		
 		if(args.length == 1) {
 			if(args[0].equalsIgnoreCase("create")) {
